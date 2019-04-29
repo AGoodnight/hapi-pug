@@ -1,0 +1,23 @@
+{
+  "name": "hapipug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "rimraf node_modules & npm install & node index.js",
+    "upload": "rimraf node_modules & aws s3 sync . s3://hapi.pug --exclude 'node_modules/*' & npm install",
+    "download": "rimraf node_modules & aws s3 sync s3://hapi.pug . --exclude 'node_modules/*' & npm install"
+  },
+  "dependencies": {
+    "boom": "7.2.0",
+    "hapi": "~16.0.0",
+    "inert": "~4.0.0",
+    "ip": "1.1.5",
+    "pug": "2.0.0-rc.4",
+    "rimraf": "2.6.2",
+    "vision": "~4.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

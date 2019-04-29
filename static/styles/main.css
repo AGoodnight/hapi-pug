@@ -1,0 +1,28 @@
+.img-responsive{
+  width:100%;
+  max-width:400px;
+}
+
+@media (min-width: 544px) {
+  .img-responsive {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-responsive {
+    max-width: 710px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-responsive {
+    max-width: 930px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-responsive {
+    max-width: 1140px;
+  }
+}
