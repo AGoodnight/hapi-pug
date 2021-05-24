@@ -59,9 +59,9 @@ const provision = async() => {
       method:'GET',
       path:'/image',
       handler:function(request,reply){
-        return reply('./static/photos/hedgehog.jpg').code(200)
+        return reply.file('./photos/hedgehog.jpg').code(200);
       }
-    })
+    });
 
     // API -- static directory
     SERVER.route({
